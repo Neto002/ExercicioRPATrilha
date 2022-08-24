@@ -52,20 +52,16 @@
             let nome = document.getElementById("nome").value;
             let dataNascimento = document.getElementById("dataNascimento").value;
             let cargo = document.getElementById("cargo").value;
-            
-            let selectGenero = document.getElementById("genero").value;
-            let genero =  selectGenero == 1 ? "Masculino" : selectGenero == 2 ? "Feminino" : "Outro";
-
-            let selectEstadoCivil = document.getElementById("estadoCivil").value
-            let estadoCivil =  selectEstadoCivil == 1 ? "Casado" : selectEstadoCivil == 2 ? "Solteiro" : "Outro";
+            let cpf = document.getElementById("cpf").value;
+            let rg = document.getElementById("rg").value;
 
             return `Formulário enviado com sucesso!
             Dados enviados:
             Nome: ${nome}
             Data de Nascimento: ${dataNascimento}
-            Cargo: ${cargo}
-            Gênero: ${genero}
-            Estado Civil: ${estadoCivil}`
+            CPF: ${cpf}
+            RG: ${rg}
+            Cargo: ${cargo}`
         }
     </script>
 </body>
